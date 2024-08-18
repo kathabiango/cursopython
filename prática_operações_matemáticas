@@ -1,0 +1,25 @@
+num1 = input("Escreva um número")  #recebendo o primeiro número
+num2 = input("Escrava outro número")  #recebendo o segundo número
+n1 = int(num1)  #convertendo para inteiro
+n2 = int(num2)  #convertendo para inteiro
+i = int(1)
+while (i <= 4):  #repetição por 4 vezes para realizar as 4 operações matemáticas
+  op = input("Qual operação você gostaria de fazer? adição, subtração, multiplicação ou divisão?") #recebendo o operador pelo usuário
+  if op == 'adição':  #condição selecionada
+    opx = n1+n2
+    print('O resultado operação de', op, 'é ', opx)   #mostrando o resultado
+    i += 1
+  elif op == 'subtração':
+    opx = n1 - n2
+    print('O resultado operação de', op, 'é ', opx)
+    i += 1
+  elif op == 'multiplicação':
+    opx = n1 * n2
+    print('O resultado operação de', op, 'é ', opx)
+    i += 1
+  elif op == 'divisão':
+    opx = n1/n2
+    print('O resultado operação de', op, 'é ', opx)
+    i += 1
+  else:
+    print('Erro. Operador não identificado')
